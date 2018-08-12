@@ -1,0 +1,29 @@
+
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 2012
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CustomQRcode.iOS", "CustomQRcode.iOS\CustomQRcode.iOS.csproj", "{7632B92F-4716-456C-B19B-182D38CE4D5C}"
+EndProject
+Project("{5DD5E4FA-CB73-4610-85AB-557B54E96AA9}") = "CustomQRcode.NuGet", "CustomQRcode.NuGet\CustomQRcode.NuGet.nuproj", "{975DFD3A-8CB1-4998-88FC-01ECA2927A08}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CustomQRcode.Android", "CustomQRcode.Android\CustomQRcode.Android.csproj", "{2AFA8A5B-2A31-46D9-AF50-8BC46A98C52A}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{7632B92F-4716-456C-B19B-182D38CE4D5C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{7632B92F-4716-456C-B19B-182D38CE4D5C}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{7632B92F-4716-456C-B19B-182D38CE4D5C}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{7632B92F-4716-456C-B19B-182D38CE4D5C}.Release|Any CPU.Build.0 = Release|Any CPU
+		{975DFD3A-8CB1-4998-88FC-01ECA2927A08}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{975DFD3A-8CB1-4998-88FC-01ECA2927A08}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{975DFD3A-8CB1-4998-88FC-01ECA2927A08}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{975DFD3A-8CB1-4998-88FC-01ECA2927A08}.Release|Any CPU.Build.0 = Release|Any CPU
+		{2AFA8A5B-2A31-46D9-AF50-8BC46A98C52A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{2AFA8A5B-2A31-46D9-AF50-8BC46A98C52A}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{2AFA8A5B-2A31-46D9-AF50-8BC46A98C52A}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{2AFA8A5B-2A31-46D9-AF50-8BC46A98C52A}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+EndGlobal

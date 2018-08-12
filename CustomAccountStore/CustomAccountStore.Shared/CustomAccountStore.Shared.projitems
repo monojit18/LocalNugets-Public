@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <MSBuildAllProjects>$(MSBuildAllProjects);$(MSBuildThisFileFullPath)</MSBuildAllProjects>
+    <HasSharedItems>true</HasSharedItems>
+    <SharedGUID>{44C2FDCF-5B29-4FAA-8410-5DD202B27272}</SharedGUID>
+  </PropertyGroup>
+  <PropertyGroup Label="Configuration">
+    <Import_RootNamespace>CustomAccountStore</Import_RootNamespace>
+  </PropertyGroup>
+  <ItemGroup>
+    <Compile Include="$(MSBuildThisFileDirectory)Subsystems\CustomAccountStore\External\CMPAccountStoreProxy.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Subsystems\CustomAccountStore\External\IAccountStoreConfiguration.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Subsystems\CustomAccountStore\Internal\CMPAccountStore.cs" />
+  </ItemGroup>
+</Project>

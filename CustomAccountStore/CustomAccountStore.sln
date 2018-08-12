@@ -1,0 +1,37 @@
+
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 2012
+Project("{D954291E-2A0B-460D-934E-DC6B0785DB48}") = "CustomAccountStore.Shared", "CustomAccountStore.Shared\CustomAccountStore.Shared.shproj", "{44C2FDCF-5B29-4FAA-8410-5DD202B27272}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CustomAccountStore.iOS", "CustomAccountStore.iOS\CustomAccountStore.iOS.csproj", "{1852194B-C6AA-4E09-A8A6-907B4BCD4C4E}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CustomAccountStore.Android", "CustomAccountStore.Android\CustomAccountStore.Android.csproj", "{EAA581F7-DEB9-43A3-9BCC-DE1D2FF4D884}"
+EndProject
+Project("{5DD5E4FA-CB73-4610-85AB-557B54E96AA9}") = "CustomAccountStore.NuGet", "CustomAccountStore.NuGet\CustomAccountStore.NuGet.nuproj", "{30CC2B1A-3476-40DA-9145-DBCAA193B14D}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution Items", "{796EF1B0-F379-4A09-8A5F-382DF1A711AA}"
+	ProjectSection(SolutionItems) = preProject
+		NugetPackageIcon.png = NugetPackageIcon.png
+		README.md = README.md
+	EndProjectSection
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{1852194B-C6AA-4E09-A8A6-907B4BCD4C4E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{1852194B-C6AA-4E09-A8A6-907B4BCD4C4E}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{1852194B-C6AA-4E09-A8A6-907B4BCD4C4E}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{1852194B-C6AA-4E09-A8A6-907B4BCD4C4E}.Release|Any CPU.Build.0 = Release|Any CPU
+		{EAA581F7-DEB9-43A3-9BCC-DE1D2FF4D884}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{EAA581F7-DEB9-43A3-9BCC-DE1D2FF4D884}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{EAA581F7-DEB9-43A3-9BCC-DE1D2FF4D884}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{EAA581F7-DEB9-43A3-9BCC-DE1D2FF4D884}.Release|Any CPU.Build.0 = Release|Any CPU
+		{30CC2B1A-3476-40DA-9145-DBCAA193B14D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{30CC2B1A-3476-40DA-9145-DBCAA193B14D}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{30CC2B1A-3476-40DA-9145-DBCAA193B14D}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{30CC2B1A-3476-40DA-9145-DBCAA193B14D}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+EndGlobal

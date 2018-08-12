@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <MSBuildAllProjects>$(MSBuildAllProjects);$(MSBuildThisFileFullPath)</MSBuildAllProjects>
+    <HasSharedItems>true</HasSharedItems>
+    <SharedGUID>{73B7752A-D209-4622-93ED-02B76E43563A}</SharedGUID>
+  </PropertyGroup>
+  <PropertyGroup Label="Configuration">
+    <Import_RootNamespace>AzureStorage</Import_RootNamespace>
+  </PropertyGroup>
+  <ItemGroup>
+    <Compile Include="$(MSBuildThisFileDirectory)AzureStorage\External\CMPAzureBlobStorageProxy.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)AzureStorage\External\CMPAzureQueueStorageProxy.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)AzureStorage\External\CMPAzureStorageFactory.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)AzureStorage\External\CMPAzureTableStorageProxy.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)AzureStorage\External\CMPStorageError.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)AzureStorage\External\CMPStorageOptions.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)AzureStorage\External\CMPTableStorageModel.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)AzureStorage\Internal\CMPBlobStorageService.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)AzureStorage\Internal\CMPQueueStorageService.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)AzureStorage\Internal\CMPStorageServiceBase.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)AzureStorage\Internal\CMPTableStorageService.cs" />
+  </ItemGroup>
+</Project>

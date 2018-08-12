@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <MSBuildAllProjects>$(MSBuildAllProjects);$(MSBuildThisFileFullPath)</MSBuildAllProjects>
+    <HasSharedItems>true</HasSharedItems>
+    <SharedGUID>{E7BF6BB7-5C8A-42FE-9D0F-048394635B1F}</SharedGUID>
+  </PropertyGroup>
+  <PropertyGroup Label="Configuration">
+    <Import_RootNamespace>ImageLoader</Import_RootNamespace>
+  </PropertyGroup>
+  <ItemGroup>
+    <Compile Include="$(MSBuildThisFileDirectory)Subsystems\ImageLoader\External\CMPImageLoaderProxy.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Subsystems\ImageLoader\Internal\CMPImageLoader.cs" />
+  </ItemGroup>
+</Project>

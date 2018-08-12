@@ -1,0 +1,31 @@
+
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 2012
+Project("{D954291E-2A0B-460D-934E-DC6B0785DB48}") = "CustomImageView.Shared", "CustomImageView.Shared\CustomImageView.Shared.shproj", "{08B1DF94-F965-4CDF-AB0A-3FFEA76C2D63}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CustomImageView.iOS", "CustomImageView.iOS\CustomImageView.iOS.csproj", "{CC7901A0-4C9B-4C10-8206-11888F02EC14}"
+EndProject
+Project("{5DD5E4FA-CB73-4610-85AB-557B54E96AA9}") = "CustomImageView.NuGet", "CustomImageView.NuGet\CustomImageView.NuGet.nuproj", "{BDDC3C89-BDD7-4DD9-A4CA-8F7ABBF5794F}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution Items", "{2934D7AD-280B-420E-8EA4-5F3013AEAC72}"
+	ProjectSection(SolutionItems) = preProject
+		NugetPackageIcon.png = NugetPackageIcon.png
+		README.md = README.md
+	EndProjectSection
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{CC7901A0-4C9B-4C10-8206-11888F02EC14}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{CC7901A0-4C9B-4C10-8206-11888F02EC14}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{CC7901A0-4C9B-4C10-8206-11888F02EC14}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{CC7901A0-4C9B-4C10-8206-11888F02EC14}.Release|Any CPU.Build.0 = Release|Any CPU
+		{BDDC3C89-BDD7-4DD9-A4CA-8F7ABBF5794F}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{BDDC3C89-BDD7-4DD9-A4CA-8F7ABBF5794F}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{BDDC3C89-BDD7-4DD9-A4CA-8F7ABBF5794F}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{BDDC3C89-BDD7-4DD9-A4CA-8F7ABBF5794F}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+EndGlobal

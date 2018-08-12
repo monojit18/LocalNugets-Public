@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(NuGetAuthoringPath)\NuGet.Packaging.Authoring.props" Condition="Exists('$(NuGetAuthoringPath)\NuGet.Packaging.Authoring.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{3F0FDD7A-4137-4CC7-AE0D-25BE716C7528}</ProjectGuid>
+    <Description>Speech-To-Text component for easy handling of voice recognition</Description>
+    <PackageId>Xamarin.CustomSpeechToText</PackageId>
+    <PackageVersion>1.0.0</PackageVersion>
+    <Authors>monojitd</Authors>
+    <DevelopmentDependency>false</DevelopmentDependency>
+    <PackageRequireLicenseAcceptance>false</PackageRequireLicenseAcceptance>
+    <OutputType>Exe</OutputType>
+    <RootNamespace>CustomSpeechToText</RootNamespace>
+    <UsePartialTypes>false</UsePartialTypes>
+    <AssemblyName>CustomSpeechToText.NuGet</AssemblyName>
+    <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
+    <Owners>Monojit Datta</Owners>
+    <Copyright>Codemongers</Copyright>
+    <Title>Xamarin.CustomSpeechToText</Title>
+    <Summary>Speech-To-Text component for easy handling of voice recognition</Summary>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <OutputPath>..\..\LocalNugets-Binaries</OutputPath>
+    <ErrorReport>prompt</ErrorReport>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <OutputPath>..\..\LocalNugets-Binaries</OutputPath>
+    <ErrorReport>prompt</ErrorReport>
+  </PropertyGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\CustomSpeechToText.Android\CustomSpeechToText.Android.csproj">
+      <Project>{A3ECD8AB-2FE9-4E93-ABB0-C2A187F5BED9}</Project>
+      <Name>CustomSpeechToText.Android</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\CustomSpeechToText.iOS\CustomSpeechToText.iOS.csproj">
+      <Project>{56528B3F-7091-4D5E-9188-11004E244E16}</Project>
+      <Name>CustomSpeechToText.iOS</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <PackageReference Include="NuGet.Build.Packaging">
+      <Version>0.2.0</Version>
+      <PrivateAssets>All</PrivateAssets>
+    </PackageReference>
+  </ItemGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.Common.targets" />
+  <Import Project="$(NuGetAuthoringPath)\NuGet.Packaging.Authoring.targets" Condition="Exists('$(NuGetAuthoringPath)\NuGet.Packaging.Authoring.targets')" />
+</Project>

@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(NuGetAuthoringPath)\NuGet.Packaging.Authoring.props" Condition="Exists('$(NuGetAuthoringPath)\NuGet.Packaging.Authoring.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{BDDC3C89-BDD7-4DD9-A4CA-8F7ABBF5794F}</ProjectGuid>
+    <Description>A custom ImageView component for iOS with inteligent Caching, Handle Cache expiry, Automatic Download</Description>
+    <PackageId>Xamarin.CustomImageView.iOS</PackageId>
+    <PackageVersion>1.0.0</PackageVersion>
+    <Authors>monojitd</Authors>
+    <DevelopmentDependency>false</DevelopmentDependency>
+    <PackageRequireLicenseAcceptance>true</PackageRequireLicenseAcceptance>
+    <OutputType>Exe</OutputType>
+    <RootNamespace>CustomImageView</RootNamespace>
+    <UsePartialTypes>false</UsePartialTypes>
+    <AssemblyName>CustomImageView.NuGet</AssemblyName>
+    <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
+    <Owners>Monojti Datta</Owners>
+    <Copyright>Codemongers</Copyright>
+    <Title>Xamarin.CustomImageView.iOS</Title>
+    <Summary>A custom ImageView component for iOS with inteligent Caching, Handle Cache expiry, Automatic Download</Summary>
+    <PackageTags>Image, ImageLoader, ImageView, Xamarin, Custom</PackageTags>
+    <NeutralLanguage>en-US</NeutralLanguage>
+    <PackageReleaseNotes>1. Initail Release for CustomImageView
+2. In-built Cache management
+</PackageReleaseNotes>
+    <PackageProjectUrl>https://github.com/monojit18/LocalNugets/tree/master/CustomImageView</PackageProjectUrl>
+    <PackageIconUrl>https://cdn.rawgit.com/monojit18/LocalNugets/25dd510a/CustomImageView/NugetPackageIcon.png</PackageIconUrl>
+    <PackageLicenseUrl>https://opensource.org/licenses/MIT</PackageLicenseUrl>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <OutputPath>..\..\LocalNugets-Binaries</OutputPath>
+    <ErrorReport>prompt</ErrorReport>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <OutputPath>..\..\LocalNugets-Binaries</OutputPath>
+    <ErrorReport>prompt</ErrorReport>
+  </PropertyGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\CustomImageView.iOS\CustomImageView.iOS.csproj">
+      <Project>{CC7901A0-4C9B-4C10-8206-11888F02EC14}</Project>
+      <Name>CustomImageView.iOS</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <PackageReference Include="NuGet.Build.Packaging">
+      <Version>0.2.2</Version>
+      <PrivateAssets>All</PrivateAssets>
+    </PackageReference>
+  </ItemGroup>
+  <ItemGroup>
+    <Reference Include="System.Net" />
+    <Reference Include="System.Net.Http" />
+  </ItemGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.Common.targets" />
+  <Import Project="$(NuGetAuthoringPath)\NuGet.Packaging.Authoring.targets" Condition="Exists('$(NuGetAuthoringPath)\NuGet.Packaging.Authoring.targets')" />
+</Project>

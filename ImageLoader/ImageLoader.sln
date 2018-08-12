@@ -1,0 +1,37 @@
+
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 2012
+Project("{D954291E-2A0B-460D-934E-DC6B0785DB48}") = "ImageLoader.Shared", "ImageLoader.Shared\ImageLoader.Shared.shproj", "{E7BF6BB7-5C8A-42FE-9D0F-048394635B1F}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ImageLoader.iOS", "ImageLoader.iOS\ImageLoader.iOS.csproj", "{225C0EF2-FCEC-4EA6-9E2B-8BA51D3F7AE0}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ImageLoader.Android", "ImageLoader.Android\ImageLoader.Android.csproj", "{FAD45FF0-67F1-49F0-8707-22346DA022F4}"
+EndProject
+Project("{5DD5E4FA-CB73-4610-85AB-557B54E96AA9}") = "ImageLoader.NuGet", "ImageLoader.NuGet\ImageLoader.NuGet.nuproj", "{B43DD2E5-5443-4F05-B535-E85719E6DF7B}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution Items", "{E38F6FEB-2310-4B97-9C95-975D1BECC554}"
+	ProjectSection(SolutionItems) = preProject
+		NugetPackageIcon.png = NugetPackageIcon.png
+		README.md = README.md
+	EndProjectSection
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{225C0EF2-FCEC-4EA6-9E2B-8BA51D3F7AE0}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{225C0EF2-FCEC-4EA6-9E2B-8BA51D3F7AE0}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{225C0EF2-FCEC-4EA6-9E2B-8BA51D3F7AE0}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{225C0EF2-FCEC-4EA6-9E2B-8BA51D3F7AE0}.Release|Any CPU.Build.0 = Release|Any CPU
+		{FAD45FF0-67F1-49F0-8707-22346DA022F4}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{FAD45FF0-67F1-49F0-8707-22346DA022F4}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{FAD45FF0-67F1-49F0-8707-22346DA022F4}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{FAD45FF0-67F1-49F0-8707-22346DA022F4}.Release|Any CPU.Build.0 = Release|Any CPU
+		{B43DD2E5-5443-4F05-B535-E85719E6DF7B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{B43DD2E5-5443-4F05-B535-E85719E6DF7B}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{B43DD2E5-5443-4F05-B535-E85719E6DF7B}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{B43DD2E5-5443-4F05-B535-E85719E6DF7B}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+EndGlobal

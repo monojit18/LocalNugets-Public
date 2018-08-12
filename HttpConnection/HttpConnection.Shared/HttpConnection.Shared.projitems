@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <MSBuildAllProjects>$(MSBuildAllProjects);$(MSBuildThisFileFullPath)</MSBuildAllProjects>
+    <HasSharedItems>true</HasSharedItems>
+    <SharedGUID>{DDEC7ADD-A0FE-45BE-94A2-334D00D496FE}</SharedGUID>
+  </PropertyGroup>
+  <PropertyGroup Label="Configuration">
+    <Import_RootNamespace>HttpConnection</Import_RootNamespace>
+  </PropertyGroup>
+  <ItemGroup>
+    <Compile Include="$(MSBuildThisFileDirectory)Subsystems\HttpConnection\External\CMPHttpConnectionProxy.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Subsystems\HttpConnection\External\CMPHttpResponse.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Subsystems\HttpConnection\External\CMPHttpWebProxy.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Subsystems\HttpConnection\Internal\CMPHttpConnection.cs" />
+  </ItemGroup>
+</Project>

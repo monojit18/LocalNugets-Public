@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(NuGetAuthoringPath)\NuGet.Packaging.Authoring.props" Condition="Exists('$(NuGetAuthoringPath)\NuGet.Packaging.Authoring.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{F2B046CA-619E-4CE6-81BB-444017CECE1C}</ProjectGuid>
+    <Description>A Xamarin wrapper around  Xaamrin.Auth APIs to share in Social Media(Facebook &amp; Twitter for now)</Description>
+    <PackageId>Xamarin.ShareQuick</PackageId>
+    <PackageVersion>1.0.0</PackageVersion>
+    <Authors>monojitd</Authors>
+    <DevelopmentDependency>false</DevelopmentDependency>
+    <PackageRequireLicenseAcceptance>true</PackageRequireLicenseAcceptance>
+    <OutputType>Exe</OutputType>
+    <RootNamespace>ShareQuick</RootNamespace>
+    <UsePartialTypes>false</UsePartialTypes>
+    <AssemblyName>ShareQuick.NuGet</AssemblyName>
+    <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
+    <Owners>Monojit Datta</Owners>
+    <Copyright>Codemongers</Copyright>
+    <Title>Xamarin.ShareQuick</Title>
+    <Summary>A Xamarin wrapper around  Xaamrin.Auth APIs to share in Social Media(Facebook &amp; Twitter for now)</Summary>
+    <PackageTags>Share, Social, Media, Quick, Xamarin, Xamarin.Auth</PackageTags>
+    <NeutralLanguage>es-US</NeutralLanguage>
+    <PackageReleaseNotes>1. Initial Release for ShareQuick component
+2. Only supports Facebook and Twitter</PackageReleaseNotes>
+    <PackageProjectUrl>https://github.com/monojit18/LocalNugets/tree/master/ShareQuick</PackageProjectUrl>
+    <PackageIconUrl>https://cdn.rawgit.com/monojit18/LocalNugets/ea65d671/ShareQuick/NugetPackageIcon.png</PackageIconUrl>
+    <PackageLicenseUrl>https://opensource.org/licenses/MIT</PackageLicenseUrl>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <OutputPath>..\..\LocalNugets-Binaries</OutputPath>
+    <ErrorReport>prompt</ErrorReport>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <OutputPath>..\..\LocalNugets-Binaries</OutputPath>
+    <ErrorReport>prompt</ErrorReport>
+  </PropertyGroup>
+  <ItemGroup>
+    <PackageReference Include="NuGet.Build.Packaging">
+      <Version>0.2.2</Version>
+      <PrivateAssets>All</PrivateAssets>
+    </PackageReference>
+    <PackageReference Include="Newtonsoft.Json">
+      <Version>11.0.2</Version>
+    </PackageReference>
+    <PackageReference Include="Xamarin.Auth">
+      <Version>1.6.0.2</Version>
+    </PackageReference>
+    <PackageReference Include="Xamarin.Android.Support.Annotations">
+      <Version>27.0.2.1</Version>
+    </PackageReference>
+    <PackageReference Include="Xamarin.Android.Arch.Core.Common">
+      <Version>1.0.0.1</Version>
+    </PackageReference>
+    <PackageReference Include="Xamarin.Android.Arch.Lifecycle.Common">
+      <Version>1.0.3.1</Version>
+    </PackageReference>
+    <PackageReference Include="Xamarin.Android.Arch.Lifecycle.Runtime">
+      <Version>1.0.3.1</Version>
+    </PackageReference>
+    <PackageReference Include="Xamarin.Android.Support.Compat">
+      <Version>27.0.2.1</Version>
+    </PackageReference>
+    <PackageReference Include="Xamarin.Android.Support.CustomTabs">
+      <Version>27.0.2.1</Version>
+    </PackageReference>
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\ShareQuick.Android\ShareQuick.Android.csproj">
+      <Project>{97A4ED6C-8892-4FA6-8D03-851AF47D675F}</Project>
+      <Name>ShareQuick.Android</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\ShareQuick.iOS\ShareQuick.iOS.csproj">
+      <Project>{0E5FB6DA-B7D0-454D-8F77-FB30C89778AE}</Project>
+      <Name>ShareQuick.iOS</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.Common.targets" />
+  <Import Project="$(NuGetAuthoringPath)\NuGet.Packaging.Authoring.targets" Condition="Exists('$(NuGetAuthoringPath)\NuGet.Packaging.Authoring.targets')" />
+</Project>

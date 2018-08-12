@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(NuGetAuthoringPath)\NuGet.Packaging.Authoring.props" Condition="Exists('$(NuGetAuthoringPath)\NuGet.Packaging.Authoring.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{30CC2B1A-3476-40DA-9145-DBCAA193B14D}</ProjectGuid>
+    <Description>A Xamarin wrapper binding for AccountStore of the Xamarin.Auth component</Description>
+    <PackageId>Xamarin.CustomAccountStore</PackageId>
+    <PackageVersion>1.0.0</PackageVersion>
+    <Authors>monojitd</Authors>
+    <DevelopmentDependency>false</DevelopmentDependency>
+    <PackageRequireLicenseAcceptance>true</PackageRequireLicenseAcceptance>
+    <OutputType>Exe</OutputType>
+    <RootNamespace>CustomAccountStore</RootNamespace>
+    <UsePartialTypes>false</UsePartialTypes>
+    <AssemblyName>CustomAccountStore.NuGet</AssemblyName>
+    <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
+    <Owners>Monojit Datta</Owners>
+    <Copyright>Codemongers</Copyright>
+    <Title>Xamarin.CustomAccountStore</Title>
+    <Summary>A Xamarin wrapper binding for AccountStore of the Xamarin.Auth component</Summary>
+    <PackageTags>Security, Keychain, KeyStore, AccountStore, Authentication, Xamarin.Auth, Xamarin</PackageTags>
+    <NeutralLanguage>en-US</NeutralLanguage>
+    <PackageReleaseNotes>Initial Release for CustomAccountStore
+</PackageReleaseNotes>
+    <PackageProjectUrl>https://github.com/monojit18/LocalNugets/tree/master/CustomAccountStore</PackageProjectUrl>
+    <PackageIconUrl>https://cdn.rawgit.com/monojit18/LocalNugets/03fba864/CustomAccountStore/NugetPackageIcon.png</PackageIconUrl>
+    <PackageLicenseUrl>https://opensource.org/licenses/MIT</PackageLicenseUrl>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <OutputPath>..\..\LocalNugets-Binaries</OutputPath>
+    <ErrorReport>prompt</ErrorReport>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <OutputPath>..\..\LocalNugets-Binaries</OutputPath>
+    <ErrorReport>prompt</ErrorReport>
+  </PropertyGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\CustomAccountStore.Android\CustomAccountStore.Android.csproj">
+      <Project>{EAA581F7-DEB9-43A3-9BCC-DE1D2FF4D884}</Project>
+      <Name>CustomAccountStore.Android</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\CustomAccountStore.iOS\CustomAccountStore.iOS.csproj">
+      <Project>{1852194B-C6AA-4E09-A8A6-907B4BCD4C4E}</Project>
+      <Name>CustomAccountStore.iOS</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <PackageReference Include="NuGet.Build.Packaging">
+      <Version>0.2.2</Version>
+      <PrivateAssets>All</PrivateAssets>
+    </PackageReference>
+  </ItemGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.Common.targets" />
+  <Import Project="$(NuGetAuthoringPath)\NuGet.Packaging.Authoring.targets" Condition="Exists('$(NuGetAuthoringPath)\NuGet.Packaging.Authoring.targets')" />
+</Project>

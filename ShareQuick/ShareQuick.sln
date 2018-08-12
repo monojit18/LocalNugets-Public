@@ -1,0 +1,37 @@
+
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 2012
+Project("{D954291E-2A0B-460D-934E-DC6B0785DB48}") = "ShareQuick.Shared", "ShareQuick.Shared\ShareQuick.Shared.shproj", "{94DEEF31-E4F5-4760-9A8E-F0FC93DC7863}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ShareQuick.iOS", "ShareQuick.iOS\ShareQuick.iOS.csproj", "{0E5FB6DA-B7D0-454D-8F77-FB30C89778AE}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ShareQuick.Android", "ShareQuick.Android\ShareQuick.Android.csproj", "{97A4ED6C-8892-4FA6-8D03-851AF47D675F}"
+EndProject
+Project("{5DD5E4FA-CB73-4610-85AB-557B54E96AA9}") = "ShareQuick.NuGet", "ShareQuick.NuGet\ShareQuick.NuGet.nuproj", "{F2B046CA-619E-4CE6-81BB-444017CECE1C}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution Items", "{039F4132-8CD8-46AD-AC65-14536324942E}"
+	ProjectSection(SolutionItems) = preProject
+		NugetPackageIcon.png = NugetPackageIcon.png
+		README.md = README.md
+	EndProjectSection
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{0E5FB6DA-B7D0-454D-8F77-FB30C89778AE}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{0E5FB6DA-B7D0-454D-8F77-FB30C89778AE}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{0E5FB6DA-B7D0-454D-8F77-FB30C89778AE}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{0E5FB6DA-B7D0-454D-8F77-FB30C89778AE}.Release|Any CPU.Build.0 = Release|Any CPU
+		{97A4ED6C-8892-4FA6-8D03-851AF47D675F}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{97A4ED6C-8892-4FA6-8D03-851AF47D675F}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{97A4ED6C-8892-4FA6-8D03-851AF47D675F}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{97A4ED6C-8892-4FA6-8D03-851AF47D675F}.Release|Any CPU.Build.0 = Release|Any CPU
+		{F2B046CA-619E-4CE6-81BB-444017CECE1C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{F2B046CA-619E-4CE6-81BB-444017CECE1C}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{F2B046CA-619E-4CE6-81BB-444017CECE1C}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{F2B046CA-619E-4CE6-81BB-444017CECE1C}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+EndGlobal

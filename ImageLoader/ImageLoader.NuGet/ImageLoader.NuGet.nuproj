@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(NuGetAuthoringPath)\NuGet.Packaging.Authoring.props" Condition="Exists('$(NuGetAuthoringPath)\NuGet.Packaging.Authoring.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{B43DD2E5-5443-4F05-B535-E85719E6DF7B}</ProjectGuid>
+    <Description>A Reusable component to Download Image directly from URL. This also supportes Caching the downloaded images efficiently</Description>
+    <PackageId>Xamarin.ImageLoader</PackageId>
+    <PackageVersion>1.0.1</PackageVersion>
+    <Authors>monojitd</Authors>
+    <DevelopmentDependency>false</DevelopmentDependency>
+    <PackageRequireLicenseAcceptance>true</PackageRequireLicenseAcceptance>
+    <OutputType>Exe</OutputType>
+    <RootNamespace>ImageLoader</RootNamespace>
+    <UsePartialTypes>false</UsePartialTypes>
+    <AssemblyName>ImageLoader.NuGet</AssemblyName>
+    <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
+    <Owners>Monojit Datta</Owners>
+    <Copyright>Codemongers</Copyright>
+    <Title>Xamarin.ImageLoader</Title>
+    <Summary>A Reusable component to Download Image directly from URI. This also supportes Caching the downloaded images efficiently</Summary>
+    <PackageTags>Image, ImageLoader, Xamarin, Cache</PackageTags>
+    <NeutralLanguage>en-US</NeutralLanguage>
+    <PackageReleaseNotes>1. Initial release for ImageLoader component
+2. Caching in-built. But a Custom Cache component can also be injected; this overrides default Caching
+3. Not thread Safey; consumer has to implement this
+4. 1:1 relationship between Loader and Image URL</PackageReleaseNotes>
+    <PackageProjectUrl>https://github.com/monojit18/LocalNugets/tree/master/ImageLoader</PackageProjectUrl>
+    <PackageIconUrl>https://cdn.rawgit.com/monojit18/LocalNugets/74dd94a6/ImageLoader/NugetPackageIcon.png</PackageIconUrl>
+    <PackageLicenseUrl>https://opensource.org/licenses/MIT</PackageLicenseUrl>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <OutputPath>..\..\LocalNugets-Binaries</OutputPath>
+    <ErrorReport>prompt</ErrorReport>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <OutputPath>..\..\LocalNugets-Binaries</OutputPath>
+    <ErrorReport>prompt</ErrorReport>
+  </PropertyGroup>
+  <ItemGroup>
+    <PackageReference Include="NuGet.Build.Packaging">
+      <Version>0.2.2</Version>
+      <PrivateAssets>All</PrivateAssets>
+    </PackageReference>
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\ImageLoader.iOS\ImageLoader.iOS.csproj">
+      <Project>{225C0EF2-FCEC-4EA6-9E2B-8BA51D3F7AE0}</Project>
+      <Name>ImageLoader.iOS</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\ImageLoader.Android\ImageLoader.Android.csproj">
+      <Project>{FAD45FF0-67F1-49F0-8707-22346DA022F4}</Project>
+      <Name>ImageLoader.Android</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.Common.targets" />
+  <Import Project="$(NuGetAuthoringPath)\NuGet.Packaging.Authoring.targets" Condition="Exists('$(NuGetAuthoringPath)\NuGet.Packaging.Authoring.targets')" />
+</Project>

@@ -1,0 +1,37 @@
+
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 2012
+Project("{D954291E-2A0B-460D-934E-DC6B0785DB48}") = "HttpConnection.Shared", "HttpConnection.Shared\HttpConnection.Shared.shproj", "{DDEC7ADD-A0FE-45BE-94A2-334D00D496FE}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "HttpConnection.iOS", "HttpConnection.iOS\HttpConnection.iOS.csproj", "{30290449-ADC8-4760-8CA8-2366F93B781D}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "HttpConnection.Android", "HttpConnection.Android\HttpConnection.Android.csproj", "{C6EE37B2-CB44-466A-A6E9-A293DF17E018}"
+EndProject
+Project("{5DD5E4FA-CB73-4610-85AB-557B54E96AA9}") = "HttpConnection.NuGet", "HttpConnection.NuGet\HttpConnection.NuGet.nuproj", "{EDB98F6B-0100-46AA-B40F-F4152EC1810B}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution Items", "{DAED1D8B-E6DE-46E1-BFD8-76BCDCB95D19}"
+	ProjectSection(SolutionItems) = preProject
+		NugetPackageIcon.png = NugetPackageIcon.png
+		README.md = README.md
+	EndProjectSection
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{30290449-ADC8-4760-8CA8-2366F93B781D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{30290449-ADC8-4760-8CA8-2366F93B781D}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{30290449-ADC8-4760-8CA8-2366F93B781D}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{30290449-ADC8-4760-8CA8-2366F93B781D}.Release|Any CPU.Build.0 = Release|Any CPU
+		{C6EE37B2-CB44-466A-A6E9-A293DF17E018}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{C6EE37B2-CB44-466A-A6E9-A293DF17E018}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{C6EE37B2-CB44-466A-A6E9-A293DF17E018}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{C6EE37B2-CB44-466A-A6E9-A293DF17E018}.Release|Any CPU.Build.0 = Release|Any CPU
+		{EDB98F6B-0100-46AA-B40F-F4152EC1810B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{EDB98F6B-0100-46AA-B40F-F4152EC1810B}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{EDB98F6B-0100-46AA-B40F-F4152EC1810B}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{EDB98F6B-0100-46AA-B40F-F4152EC1810B}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+EndGlobal

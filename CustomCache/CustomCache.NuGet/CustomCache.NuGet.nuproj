@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(NuGetAuthoringPath)\NuGet.Packaging.Authoring.props" Condition="Exists('$(NuGetAuthoringPath)\NuGet.Packaging.Authoring.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{877A7434-B327-4ACF-AF78-A565A7493990}</ProjectGuid>
+    <Description>A Shared Xamarin component for Caching custom data on to disk</Description>
+    <PackageId>Xamarin.CustomCache</PackageId>
+    <PackageVersion>1.0.2</PackageVersion>
+    <Authors>monojitd</Authors>
+    <DevelopmentDependency>true</DevelopmentDependency>
+    <PackageRequireLicenseAcceptance>true</PackageRequireLicenseAcceptance>
+    <OutputType>Exe</OutputType>
+    <RootNamespace>CustomCache</RootNamespace>
+    <UsePartialTypes>false</UsePartialTypes>
+    <AssemblyName>CustomCache.NuGet</AssemblyName>
+    <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
+    <Owners>Monojit Datta</Owners>
+    <Copyright>Codemongers</Copyright>
+    <Title>Xamarin.CustomCache</Title>
+    <Summary>A Shared Xamarin component for Caching custom data on to disk</Summary>
+    <PackageTags>Cache, Custom, File, Xamarin</PackageTags>
+    <NeutralLanguage>en-US</NeutralLanguage>
+    <PackageProjectUrl>https://github.com/monojit18/LocalNugets/tree/master/CustomCache</PackageProjectUrl>
+    <PackageLicenseUrl>https://opensource.org/licenses/MIT</PackageLicenseUrl>
+    <PackageReleaseNotes>Added new Nuget package Icon</PackageReleaseNotes>
+    <PackageIconUrl>https://cdn.rawgit.com/monojit18/LocalNugets/a2ebfb58/CustomCache/NugetPackageIcon.png</PackageIconUrl>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <OutputPath>..\..\LocalNugets-Binaries</OutputPath>
+    <ErrorReport>prompt</ErrorReport>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <OutputPath>..\..\LocalNugets-Binaries</OutputPath>
+    <ErrorReport>prompt</ErrorReport>
+  </PropertyGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\CustomCache.Android\CustomCache.Android.csproj">
+      <Project>{9B4205C4-B550-49DB-908E-93E8070B3DDE}</Project>
+      <Name>CustomCache.Android</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\CustomCache.iOS\CustomCache.iOS.csproj">
+      <Project>{42EC85E5-2DBE-471C-9E0C-439AE50C4F8E}</Project>
+      <Name>CustomCache.iOS</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <PackageReference Include="NuGet.Build.Packaging">
+      <Version>0.2.2</Version>
+      <PrivateAssets>All</PrivateAssets>
+    </PackageReference>
+  </ItemGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.Common.targets" />
+  <Import Project="$(NuGetAuthoringPath)\NuGet.Packaging.Authoring.targets" Condition="Exists('$(NuGetAuthoringPath)\NuGet.Packaging.Authoring.targets')" />
+</Project>

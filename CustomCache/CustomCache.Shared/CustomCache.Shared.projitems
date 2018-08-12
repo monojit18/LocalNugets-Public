@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <MSBuildAllProjects>$(MSBuildAllProjects);$(MSBuildThisFileFullPath)</MSBuildAllProjects>
+    <HasSharedItems>true</HasSharedItems>
+    <SharedGUID>{AF38FE6D-6268-4293-B663-332FAE67A382}</SharedGUID>
+  </PropertyGroup>
+  <PropertyGroup Label="Configuration">
+    <Import_RootNamespace>CustomCache</Import_RootNamespace>
+  </PropertyGroup>
+  <ItemGroup>
+    <Compile Include="$(MSBuildThisFileDirectory)Subsystems\Cache\External\CMPCacheProxy.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Subsystems\Cache\Internal\CMPCache.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Subsystems\CustomFileManager\External\CMPFileManagerProxy.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Subsystems\CustomFileManager\Internal\CMPFileManager.cs" />
+  </ItemGroup>
+</Project>

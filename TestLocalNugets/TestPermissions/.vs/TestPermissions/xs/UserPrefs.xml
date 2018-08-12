@@ -1,0 +1,14 @@
+﻿<Properties StartupConfiguration="{6E43AF07-F697-4BDB-B5CA-F5A8AC477743}|Default">
+  <MonoDevelop.Ide.Workbench ActiveDocument="TestPermissions/MainActivity.cs">
+    <Files>
+      <File FileName="TestPermissions/MainActivity.cs" Line="8" Column="50" />
+    </Files>
+  </MonoDevelop.Ide.Workbench>
+  <MonoDevelop.Ide.Workspace ActiveConfiguration="Release" />
+  <MonoDevelop.Ide.DebuggingService.Breakpoints>
+    <BreakpointStore />
+  </MonoDevelop.Ide.DebuggingService.Breakpoints>
+  <MonoDevelop.Ide.DebuggingService.PinnedWatches />
+  <MultiItemStartupConfigurations />
+  <MonoDevelop.Ide.ItemProperties.TestPermissions PreferredExecutionTarget="Android.Nexus_6_API_26" HideGettingStarted="True" />
+</Properties>

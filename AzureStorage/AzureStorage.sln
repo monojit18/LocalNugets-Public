@@ -1,0 +1,31 @@
+
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 2012
+Project("{D954291E-2A0B-460D-934E-DC6B0785DB48}") = "AzureStorage.Shared", "AzureStorage.Shared\AzureStorage.Shared.shproj", "{73B7752A-D209-4622-93ED-02B76E43563A}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AzureStorage.iOS", "AzureStorage.iOS\AzureStorage.iOS.csproj", "{9DBAD83D-9775-4F4A-9AA8-4B342FA01EEE}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AzureStorage.Android", "AzureStorage.Android\AzureStorage.Android.csproj", "{D5D64771-D19A-4461-8437-E5A2CD308A1E}"
+EndProject
+Project("{5DD5E4FA-CB73-4610-85AB-557B54E96AA9}") = "AzureStorage.NuGet", "AzureStorage.NuGet\AzureStorage.NuGet.nuproj", "{EE4CF272-246C-4AF9-81FE-CBAED36E3E16}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{9DBAD83D-9775-4F4A-9AA8-4B342FA01EEE}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{9DBAD83D-9775-4F4A-9AA8-4B342FA01EEE}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{9DBAD83D-9775-4F4A-9AA8-4B342FA01EEE}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{9DBAD83D-9775-4F4A-9AA8-4B342FA01EEE}.Release|Any CPU.Build.0 = Release|Any CPU
+		{D5D64771-D19A-4461-8437-E5A2CD308A1E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{D5D64771-D19A-4461-8437-E5A2CD308A1E}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{D5D64771-D19A-4461-8437-E5A2CD308A1E}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{D5D64771-D19A-4461-8437-E5A2CD308A1E}.Release|Any CPU.Build.0 = Release|Any CPU
+		{EE4CF272-246C-4AF9-81FE-CBAED36E3E16}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{EE4CF272-246C-4AF9-81FE-CBAED36E3E16}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{EE4CF272-246C-4AF9-81FE-CBAED36E3E16}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{EE4CF272-246C-4AF9-81FE-CBAED36E3E16}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+EndGlobal
