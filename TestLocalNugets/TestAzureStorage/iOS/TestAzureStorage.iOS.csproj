@@ -93,11 +93,11 @@
     <Reference Include="Microsoft.WindowsAzure.Storage">
       <HintPath>..\packages\WindowsAzure.Storage.9.1.1\lib\netstandard1.3\Microsoft.WindowsAzure.Storage.dll</HintPath>
     </Reference>
-    <Reference Include="AzureStorage">
-      <HintPath>..\packages\Xamarin.AzureStorage.1.0.0\lib\xamarinios10\AzureStorage.dll</HintPath>
-    </Reference>
     <Reference Include="Xamarin.Azure.NotificationHubs.iOS">
       <HintPath>..\packages\Xamarin.Azure.NotificationHubs.iOS.1.2.5.2\lib\Xamarin.iOS10\Xamarin.Azure.NotificationHubs.iOS.dll</HintPath>
+    </Reference>
+    <Reference Include="AzureStorage">
+      <HintPath>..\packages\Xamarin.AzureStorage.1.0.0\lib\xamarinios10\AzureStorage.dll</HintPath>
     </Reference>
   </ItemGroup>
   <ItemGroup>
