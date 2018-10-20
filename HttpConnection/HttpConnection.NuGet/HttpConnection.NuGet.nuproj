@@ -27,7 +27,7 @@
 3. No Thread Safety - Consumer has to implement logic to make it thread safe</PackageReleaseNotes>
     <PackageProjectUrl>https://github.com/monojit18/LocalNugets/tree/master/HttpConnection</PackageProjectUrl>
     <PackageLicenseUrl>https://opensource.org/licenses/MIT</PackageLicenseUrl>
-    <PackageIconUrl>https://cdn.rawgit.com/monojit18/LocalNugets/12a6768e/HttpConnection/NugetPackageIcon.png</PackageIconUrl>
+    <PackageIconUrl>https://gist.githubusercontent.com/monojit18/0ea0f66dfbeaff179bbc5644239cf268/raw/d66c9ab9371ad0d293f0273db7bf00ffeab2b21f/NugetPackageIcon.png</PackageIconUrl>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
     <DebugSymbols>true</DebugSymbols>

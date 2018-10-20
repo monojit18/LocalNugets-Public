@@ -52,10 +52,10 @@
     <Reference Include="Microsoft.WindowsAzure.Storage">
       <HintPath>..\packages\WindowsAzure.Storage.9.1.1\lib\netstandard1.3\Microsoft.WindowsAzure.Storage.dll</HintPath>
     </Reference>
+    <Reference Include="Java.Interop" />
     <Reference Include="AzureStorage">
       <HintPath>..\packages\Xamarin.AzureStorage.1.0.0\lib\monoandroid81\AzureStorage.dll</HintPath>
     </Reference>
-    <Reference Include="Java.Interop" />
   </ItemGroup>
   <ItemGroup>
     <Compile Include="MainActivity.cs" />

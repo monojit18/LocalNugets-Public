@@ -5,12 +5,12 @@
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
     <ProjectGuid>{9CD27E91-380A-456A-A5EE-9333059D94EF}</ProjectGuid>
-    <Description>Permission component to handle the Android permission model</Description>
+    <Description>A Xamarin wrapper binding around Android permission model</Description>
     <PackageId>Xamarin.CustomPermissions.Droid</PackageId>
     <PackageVersion>1.0.0</PackageVersion>
     <Authors>monojitd</Authors>
     <DevelopmentDependency>false</DevelopmentDependency>
-    <PackageRequireLicenseAcceptance>false</PackageRequireLicenseAcceptance>
+    <PackageRequireLicenseAcceptance>true</PackageRequireLicenseAcceptance>
     <OutputType>Exe</OutputType>
     <RootNamespace>CustomPermission</RootNamespace>
     <UsePartialTypes>false</UsePartialTypes>
@@ -19,7 +19,14 @@
     <Owners>Monojit Datta</Owners>
     <Copyright>Codemongers</Copyright>
     <Title>Xamarin.CustomPermissions.Droid</Title>
-    <Summary>Permission component to handle the Android permission model</Summary>
+    <Summary>A Xamarin wrapper binding around Android permission model</Summary>
+    <PackageTags>Permission, Android, Xamarin</PackageTags>
+    <NeutralLanguage>en-US</NeutralLanguage>
+    <PackageReleaseNotes>1. Initial Release for CustomPermission.Droid componenet
+2. Supports Android only</PackageReleaseNotes>
+    <PackageProjectUrl>https://github.com/monojit18/LocalNugets/tree/master/CustomPermission</PackageProjectUrl>
+    <PackageIconUrl>https://cdn.rawgit.com/monojit18/LocalNugets/e2bf3744/CustomPermission/NugetPackageIcon.png</PackageIconUrl>
+    <PackageLicenseUrl>https://opensource.org/licenses/MIT</PackageLicenseUrl>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
     <DebugSymbols>true</DebugSymbols>

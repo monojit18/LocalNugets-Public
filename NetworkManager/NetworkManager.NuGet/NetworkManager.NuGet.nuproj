@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(NuGetAuthoringPath)\NuGet.Packaging.Authoring.props" Condition="Exists('$(NuGetAuthoringPath)\NuGet.Packaging.Authoring.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{A6F44F21-71E1-44D9-8BD6-4A50E08B75A1}</ProjectGuid>
+    <Description>A cross platform wrapper for NetworkManager on iOS and Android</Description>
+    <PackageId>Xamarin.NetworkManager</PackageId>
+    <PackageVersion>1.0.1</PackageVersion>
+    <Authors>monojitd</Authors>
+    <DevelopmentDependency>false</DevelopmentDependency>
+    <PackageRequireLicenseAcceptance>true</PackageRequireLicenseAcceptance>
+    <OutputType>Exe</OutputType>
+    <RootNamespace>NetworkManager</RootNamespace>
+    <UsePartialTypes>false</UsePartialTypes>
+    <AssemblyName>NetworkManager.NuGet</AssemblyName>
+    <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
+    <Owners>Monojit Datta</Owners>
+    <Copyright>Codemongers</Copyright>
+    <PackageTags>Network, Network Status, Http, Reachable, Connection Manager</PackageTags>
+    <Title>Xamarin.NetworkManager</Title>
+    <NeutralLanguage>es-US</NeutralLanguage>
+    <PackageReleaseNotes>Code Refactoring
+Mnor fixes</PackageReleaseNotes>
+    <Summary>A cross platform wrapper for NetworkManager on iOS and Android</Summary>
+    <PackageProjectUrl>https://github.com/monojit18/LocalNugets</PackageProjectUrl>
+    <PackageIconUrl>https://gist.githubusercontent.com/monojit18/0ea0f66dfbeaff179bbc5644239cf268/raw/d66c9ab9371ad0d293f0273db7bf00ffeab2b21f/NugetPackageIcon.png</PackageIconUrl>
+    <PackageLicenseUrl>https://opensource.org/licenses/MIT</PackageLicenseUrl>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <OutputPath>bin\Debug</OutputPath>
+    <ErrorReport>prompt</ErrorReport>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <OutputPath>..\..\LocalNugets-Binaries</OutputPath>
+    <ErrorReport>prompt</ErrorReport>
+  </PropertyGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\NetworkManager.Android\NetworkManager.Android.csproj">
+      <Project>{35A161FC-1A3B-4CD9-BE10-6340DF54946E}</Project>
+      <Name>NetworkManager.Android</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\NetworkManager.iOS\NetworkManager.iOS.csproj">
+      <Project>{D979E07F-73D0-445F-A381-0631ED555CB9}</Project>
+      <Name>NetworkManager.iOS</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <PackageReference Include="NuGet.Build.Packaging">
+      <Version>0.2.0</Version>
+      <PrivateAssets>All</PrivateAssets>
+    </PackageReference>
+  </ItemGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.Common.targets" />
+  <Import Project="$(NuGetAuthoringPath)\NuGet.Packaging.Authoring.targets" Condition="Exists('$(NuGetAuthoringPath)\NuGet.Packaging.Authoring.targets')" />
+</Project>

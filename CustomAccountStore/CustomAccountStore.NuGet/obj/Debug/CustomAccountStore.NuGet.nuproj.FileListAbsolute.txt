@@ -1,2 +1,0 @@
-/Users/monojitd/Materials/Projects/XamarinProjects/GITHUBProjects/LocalNugets/CustomAccountStore/CustomAccountStore.NuGet/obj/Debug/CustomAccountStore.NuGet.nuprojResolveAssemblyReference.cache
-/Users/monojitd/Materials/Projects/XamarinProjects/GITHUBProjects/LocalNugets/CustomAccountStore/CustomAccountStore.NuGet/obj/Debug/CustomAccountStore.NuGet.nuproj.CoreCompileInputs.cache

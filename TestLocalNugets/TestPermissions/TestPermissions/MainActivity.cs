@@ -15,7 +15,7 @@ namespace TestPermissions
         int count = 1;
 
         private CMPPermissionsProxy _permissionsProxy;
-
+        
         protected override void OnCreate(Bundle savedInstanceState)
         {
             base.OnCreate(savedInstanceState);

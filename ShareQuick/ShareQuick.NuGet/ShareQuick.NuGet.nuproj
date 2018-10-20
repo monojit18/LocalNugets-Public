@@ -7,7 +7,7 @@
     <ProjectGuid>{F2B046CA-619E-4CE6-81BB-444017CECE1C}</ProjectGuid>
     <Description>A Xamarin wrapper around  Xaamrin.Auth APIs to share in Social Media(Facebook &amp; Twitter for now)</Description>
     <PackageId>Xamarin.ShareQuick</PackageId>
-    <PackageVersion>1.0.0</PackageVersion>
+    <PackageVersion>1.0.1</PackageVersion>
     <Authors>monojitd</Authors>
     <DevelopmentDependency>false</DevelopmentDependency>
     <PackageRequireLicenseAcceptance>true</PackageRequireLicenseAcceptance>

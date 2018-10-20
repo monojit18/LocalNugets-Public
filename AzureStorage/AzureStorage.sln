@@ -9,6 +9,12 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AzureStorage.Android", "Azu
 EndProject
 Project("{5DD5E4FA-CB73-4610-85AB-557B54E96AA9}") = "AzureStorage.NuGet", "AzureStorage.NuGet\AzureStorage.NuGet.nuproj", "{EE4CF272-246C-4AF9-81FE-CBAED36E3E16}"
 EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution Items", "{B46BD580-A1FB-4EE8-AF96-6C28A3379B7A}"
+	ProjectSection(SolutionItems) = preProject
+		NugetPackageIcon.png = NugetPackageIcon.png
+		README.md = README.md
+	EndProjectSection
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU

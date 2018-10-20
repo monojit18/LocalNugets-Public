@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <MSBuildAllProjects>$(MSBuildAllProjects);$(MSBuildThisFileFullPath)</MSBuildAllProjects>
+    <HasSharedItems>true</HasSharedItems>
+    <SharedGUID>{6CFE4F92-9D84-4306-8704-58CF13F6AEC9}</SharedGUID>
+  </PropertyGroup>
+  <PropertyGroup Label="Configuration">
+    <Import_RootNamespace>NetworkManager</Import_RootNamespace>
+  </PropertyGroup>
+  <ItemGroup>
+    <Compile Include="$(MSBuildThisFileDirectory)Subsystems\NetworkManager.Shared\External\CMPNetworkManagerSharedProxy.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Subsystems\NetworkManager.Shared\Internal\INetworkManager.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Subsystems\NetworkManager.Shared\External\CMPNetworkEventArgs.cs" />
+  </ItemGroup>
+</Project>

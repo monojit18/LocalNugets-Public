@@ -1,0 +1,31 @@
+
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 15
+Project("{D954291E-2A0B-460D-934E-DC6B0785DB48}") = "MediaCapture.Shared", "MediaCapture.Shared\MediaCapture.Shared.shproj", "{A447AD3D-04EB-4116-B5D0-27C2EC84E2E4}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MediaCapture.iOS", "MediaCapture.iOS\MediaCapture.iOS.csproj", "{29C43FE8-243E-4E6A-80BA-D3B85483966F}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MediaCapture.Android", "MediaCapture.Android\MediaCapture.Android.csproj", "{5FE22DEA-1E80-4F53-9CB8-D5492414098B}"
+EndProject
+Project("{5DD5E4FA-CB73-4610-85AB-557B54E96AA9}") = "MediaCapture.NuGet", "MediaCapture.NuGet\MediaCapture.NuGet.nuproj", "{122AA8AF-4138-4F6C-B1AB-5857C0D685A1}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{29C43FE8-243E-4E6A-80BA-D3B85483966F}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{29C43FE8-243E-4E6A-80BA-D3B85483966F}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{29C43FE8-243E-4E6A-80BA-D3B85483966F}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{29C43FE8-243E-4E6A-80BA-D3B85483966F}.Release|Any CPU.Build.0 = Release|Any CPU
+		{5FE22DEA-1E80-4F53-9CB8-D5492414098B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{5FE22DEA-1E80-4F53-9CB8-D5492414098B}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{5FE22DEA-1E80-4F53-9CB8-D5492414098B}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{5FE22DEA-1E80-4F53-9CB8-D5492414098B}.Release|Any CPU.Build.0 = Release|Any CPU
+		{122AA8AF-4138-4F6C-B1AB-5857C0D685A1}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{122AA8AF-4138-4F6C-B1AB-5857C0D685A1}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{122AA8AF-4138-4F6C-B1AB-5857C0D685A1}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{122AA8AF-4138-4F6C-B1AB-5857C0D685A1}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+EndGlobal

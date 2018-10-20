@@ -5,12 +5,12 @@
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
     <ProjectGuid>{EE4CF272-246C-4AF9-81FE-CBAED36E3E16}</ProjectGuid>
-    <Description>Binding for Azure Storage functions</Description>
+    <Description>A Xamarin wrapper binding for Azure Storage APIs - Blob, Queue, Table</Description>
     <PackageId>Xamarin.AzureStorage</PackageId>
     <PackageVersion>1.0.0</PackageVersion>
     <Authors>monojitd</Authors>
     <DevelopmentDependency>false</DevelopmentDependency>
-    <PackageRequireLicenseAcceptance>false</PackageRequireLicenseAcceptance>
+    <PackageRequireLicenseAcceptance>true</PackageRequireLicenseAcceptance>
     <OutputType>Exe</OutputType>
     <RootNamespace>AzureStorage</RootNamespace>
     <UsePartialTypes>false</UsePartialTypes>
@@ -19,16 +19,23 @@
     <Owners>Monojit Datta</Owners>
     <Copyright>Codemongers</Copyright>
     <Title>Xamarin.AzureStorage</Title>
-    <Summary>Binding for Azure Storage functions</Summary>
+    <Summary>A Xamarin wrapper binding for Azure Storage APIs - Blob, Queue, Table</Summary>
+    <PackageTags>Azure, Storage, Blob, Queue, Table, Database, Xamarin</PackageTags>
+    <NeutralLanguage>en-US</NeutralLanguage>
+    <PackageReleaseNotes>1. Initial Release for AzureStorage component
+2. Supporting Blob, Queue, Table only</PackageReleaseNotes>
+    <PackageProjectUrl>https://github.com/monojit18/LocalNugets/tree/master/AzureStorage</PackageProjectUrl>
+    <PackageIconUrl>https://cdn.rawgit.com/monojit18/LocalNugets/4633cca7/AzureStorage/NugetPackageIcon.png</PackageIconUrl>
+    <PackageLicenseUrl>https://opensource.org/licenses/MIT</PackageLicenseUrl>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
     <DebugSymbols>true</DebugSymbols>
     <DebugType>full</DebugType>
-    <OutputPath>..\..\..\LocalNugets-Binaries</OutputPath>
+    <OutputPath>..\..\LocalNugets-Binaries</OutputPath>
     <ErrorReport>prompt</ErrorReport>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
-    <OutputPath>..\..\..\LocalNugets-Binaries</OutputPath>
+    <OutputPath>..\..\LocalNugets-Binaries</OutputPath>
     <ErrorReport>prompt</ErrorReport>
   </PropertyGroup>
   <ItemGroup>
@@ -43,7 +50,7 @@
   </ItemGroup>
   <ItemGroup>
     <PackageReference Include="NuGet.Build.Packaging">
-      <Version>0.2.0</Version>
+      <Version>0.2.2</Version>
       <PrivateAssets>All</PrivateAssets>
     </PackageReference>
   </ItemGroup>

@@ -40,5 +40,13 @@ namespace Subsystems.AzureStorage.External
             return azureBlobStorageProxy;
 
         }
+
+        public static CMPAzureQueueStorageProxy CreateQueueStorage(string connectionString, string queueameString)
+        {
+
+            var azureQueueStorageProxy = new CMPAzureQueueStorageProxy(connectionString, queueameString);
+            return azureQueueStorageProxy;
+
+        }
     }
 }

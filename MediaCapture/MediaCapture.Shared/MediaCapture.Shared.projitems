@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <MSBuildAllProjects>$(MSBuildAllProjects);$(MSBuildThisFileFullPath)</MSBuildAllProjects>
+    <HasSharedItems>true</HasSharedItems>
+    <SharedGUID>{A447AD3D-04EB-4116-B5D0-27C2EC84E2E4}</SharedGUID>
+  </PropertyGroup>
+  <PropertyGroup Label="Configuration">
+    <Import_RootNamespace>MediaCapture</Import_RootNamespace>
+  </PropertyGroup>
+  <ItemGroup>
+    <Compile Include="$(MSBuildThisFileDirectory)Subsystems\MediaCapture.Shared\External\CMPMediaCaptureSharedProxy.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Subsystems\MediaCapture.Shared\External\CMPMediaEventArgs.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Subsystems\MediaCapture.Shared\Internal\IMediaCapture.cs" />
+  </ItemGroup>
+</Project>

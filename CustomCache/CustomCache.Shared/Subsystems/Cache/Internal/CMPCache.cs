@@ -60,8 +60,8 @@ namespace Subsystems.Cache.Internal
 
             if (string.IsNullOrEmpty(fileNameString))
                 return null;
-
-            byte[] fileNameBytes = Encoding.UTF8.GetBytes(fileNameString);
+            
+            var fileNameBytes = Encoding.UTF8.GetBytes(fileNameString);
             string fileNameWithBase64String = Convert.ToBase64String(fileNameBytes);
             return fileNameWithBase64String;
 
